@@ -17,11 +17,19 @@ export const useScrollAnimation = () => {
       });
     }, observerOptions);
 
-    // Observe all elements with the scroll-trigger class
-    const scrollTriggers = document.querySelectorAll('.scroll-trigger');
-    scrollTriggers.forEach((trigger) => observer.observe(trigger));
+    // Wait for DOM to be ready
+    const initAnimation = () => {
+      const scrollTriggers = document.querySelectorAll('.scroll-trigger');
+      scrollTriggers.forEach((trigger) => {
+        observer.observe(trigger);
+      });
+    };
+
+    // Run after a short delay to ensure DOM is ready
+    setTimeout(initAnimation, 100);
 
     return () => {
+      const scrollTriggers = document.querySelectorAll('.scroll-trigger');
       scrollTriggers.forEach((trigger) => observer.unobserve(trigger));
     };
   }, []);

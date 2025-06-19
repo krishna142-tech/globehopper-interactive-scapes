@@ -45,23 +45,23 @@ const Index = () => {
           <Hero />
         </section>
         
-        <section id="destinations" className="scroll-trigger opacity-0 translate-y-10 bg-gray-50 dark:bg-gray-800">
+        <section id="destinations" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
           <Destinations />
         </section>
         
-        <section id="packages" className="scroll-trigger opacity-0 translate-y-10 bg-white dark:bg-gray-900">
+        <section id="packages" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
           <Packages />
         </section>
         
-        <section id="testimonials" className="scroll-trigger opacity-0 translate-y-10 bg-gray-50 dark:bg-gray-800">
+        <section id="testimonials" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
           <Testimonials />
         </section>
         
-        <section className="scroll-trigger opacity-0 translate-y-10 bg-primary dark:bg-gray-900">
+        <section className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
           <Stats />
         </section>
         
-        <section id="contact" className="scroll-trigger opacity-0 translate-y-10 bg-white dark:bg-gray-800">
+        <section id="contact" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
           <Contact />
         </section>
       </main>
