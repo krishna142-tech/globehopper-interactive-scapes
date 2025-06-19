@@ -1,73 +1,192 @@
-# Welcome to your Lovable project
 
-## Project info
+# GlobeHopper – Interactive Scapes 🌍
 
-**URL**: https://lovable.dev/projects/e9cf4f8f-e929-4252-b374-a359bdafee62
+A modern, responsive travel agency landing page built for Frontend Battle Round 1. This premium website showcases stunning destinations with interactive animations, dark/light mode, and immersive user experience.
 
-## How can I edit this code?
+![GlobeHopper Preview](https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop)
 
-There are several ways of editing your application.
+## 🚀 Live Demo
 
-**Use Lovable**
+**Deployment Link:** [Your Lovable App URL]
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e9cf4f8f-e929-4252-b374-a359bdafee62) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### Core Features
+- 🎬 **Preloader Screen** - Animated loading screen with smooth transitions
+- 🏠 **Hero Section** - Full-screen video background with compelling CTAs
+- 🧭 **Sticky Navigation** - Smooth scroll to sections with responsive design
+- 🏝️ **Destinations Gallery** - Interactive cards with hover animations
+- 📦 **Travel Packages** - Curated travel deals and offerings
+- ⭐ **Testimonials Carousel** - Customer reviews with star ratings
+- 📊 **Stats Section** - Animated counters showing company achievements
+- 📞 **Contact Form** - Responsive contact section with validation
+- 🌙 **Dark/Light Mode** - Theme toggle with smooth transitions
 
-**Use your preferred IDE**
+### Interactive Elements
+- 💧 **Ripple Effects** - Elegant button and card interactions
+- 🎯 **Scroll Animations** - Fade-in effects triggered by viewport
+- 📱 **Mobile Responsive** - Optimized for all device sizes
+- ⚡ **Smooth Scrolling** - Seamless navigation between sections
+- 🎨 **Modern Animations** - CSS keyframes and Tailwind transitions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend Framework:** React 18.3.1
+- **Styling:** Tailwind CSS 3.x
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Build Tool:** Vite
+- **TypeScript:** Full type safety
+- **Deployment:** Lovable Platform
 
-Follow these steps:
+## 📦 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── ui/                 # shadcn/ui components
+│   ├── Contact.tsx         # Contact form section
+│   ├── Destinations.tsx    # Featured destinations
+│   ├── Footer.tsx          # Site footer
+│   ├── Hero.tsx           # Hero section with CTA
+│   ├── Navbar.tsx         # Sticky navigation
+│   ├── Packages.tsx       # Travel packages
+│   ├── Preloader.tsx      # Loading screen
+│   ├── ScrollToTop.tsx    # Scroll to top button
+│   ├── Stats.tsx          # Statistics section
+│   ├── Testimonials.tsx   # Customer reviews
+│   └── ThemeToggle.tsx    # Dark/light mode toggle
+├── hooks/
+│   ├── useRipple.ts       # Ripple effect hook
+│   └── useScrollAnimation.ts # Scroll animations
+├── pages/
+│   ├── Index.tsx          # Main landing page
+│   └── NotFound.tsx       # 404 page
+└── App.tsx                # Root component
 ```
 
-**Edit a file directly in GitHub**
+## 🏃‍♂️ Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js 18+ installed
+- npm or yarn package manager
 
-**Use GitHub Codespaces**
+### Local Development
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   cd globehopper-interactive-scapes
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This project is built with:
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Open browser**
+   ```
+   http://localhost:5173
+   ```
 
-## How can I deploy this project?
+### Build for Production
 
-Simply open [Lovable](https://lovable.dev/projects/e9cf4f8f-e929-4252-b374-a359bdafee62) and click on Share -> Publish.
+```bash
+npm run build
+npm run preview
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🎨 Design Highlights
 
-Yes, you can!
+### Color Scheme
+- **Light Mode:** Clean whites with blue accent (#2563eb)
+- **Dark Mode:** Deep grays with purple accents
+- **Gradients:** Blue to purple for premium feel
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Typography
+- **Headings:** Bold, large fonts for impact
+- **Body:** Clean, readable text with proper contrast
+- **Responsive:** Scales beautifully across devices
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Animations
+- **Scroll Triggers:** Fade-in effects on viewport entry
+- **Hover States:** Smooth transitions and scale effects
+- **Ripple Effects:** Material Design-inspired interactions
+- **Loading States:** Engaging preloader animations
+
+## 🔧 Customization
+
+### Adding New Destinations
+Edit `src/components/Destinations.tsx` and add to the destinations array:
+
+```tsx
+{
+  id: 5,
+  name: 'Your Destination',
+  image: 'image-url',
+  price: 'From $999',
+  duration: '5 Days',
+  description: 'Your description'
+}
+```
+
+### Modifying Theme Colors
+Update `src/index.css` CSS variables for custom theming:
+
+```css
+:root {
+  --primary: your-color-hsl;
+  --primary-foreground: your-color-hsl;
+}
+```
+
+## 🤖 AI Tools Used
+
+This project was built with assistance from:
+- **Lovable AI** - Primary development and code generation
+- **ChatGPT** - Planning and optimization suggestions
+- **GitHub Copilot** - Code completion and refactoring
+
+## 📈 Performance Features
+
+- ⚡ **Fast Loading** - Optimized images and lazy loading
+- 📱 **Mobile First** - Responsive design principles
+- 🎯 **SEO Ready** - Semantic HTML and meta tags
+- ♿ **Accessible** - ARIA labels and keyboard navigation
+- 🔧 **Modern Build** - Vite for fast development and builds
+
+## 🌟 Future Enhancements
+
+- [ ] Blog/Articles section
+- [ ] User authentication
+- [ ] Booking system integration
+- [ ] Multi-language support
+- [ ] Advanced filtering for destinations
+- [ ] Payment gateway integration
+
+## 📄 License
+
+This project is created for Frontend Battle Round 1 competition.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+## 📞 Contact
+
+**Project Name:** GlobeHopper – Interactive Scapes  
+**Built with:** React + Tailwind CSS + Lovable AI  
+**Competition:** Frontend Battle Round 1
+
+---
+
+*Made with ❤️ using Lovable AI Platform*
