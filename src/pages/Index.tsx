@@ -36,32 +36,32 @@ const Index = () => {
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 bg-white dark:bg-gray-900 ${isDark ? 'dark' : ''}`}>
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <Navbar />
       <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
       
-      <main>
+      <main className="w-full">
         <section id="home">
           <Hero />
         </section>
         
-        <section id="destinations" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
+        <section id="destinations" className="scroll-trigger opacity-100 md:opacity-0 translate-y-0 md:translate-y-10 transition-all duration-700 ease-out">
           <Destinations />
         </section>
         
-        <section id="packages" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
+        <section id="packages" className="scroll-trigger opacity-100 md:opacity-0 translate-y-0 md:translate-y-10 transition-all duration-700 ease-out">
           <Packages />
         </section>
         
-        <section id="testimonials" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
+        <section id="testimonials" className="scroll-trigger opacity-100 md:opacity-0 translate-y-0 md:translate-y-10 transition-all duration-700 ease-out">
           <Testimonials />
         </section>
         
-        <section className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
+        <section className="scroll-trigger opacity-100 md:opacity-0 translate-y-0 md:translate-y-10 transition-all duration-700 ease-out">
           <Stats />
         </section>
         
-        <section id="contact" className="scroll-trigger opacity-0 translate-y-10 transition-all duration-700">
+        <section id="contact" className="scroll-trigger opacity-100 md:opacity-0 translate-y-0 md:translate-y-10 transition-all duration-700 ease-out">
           <Contact />
         </section>
       </main>

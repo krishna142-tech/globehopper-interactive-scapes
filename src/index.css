@@ -80,6 +80,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Ensure all sections are visible by default on mobile */
+@media (max-width: 768px) {
+  .scroll-trigger {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
 /* Fade in animation for scroll triggers */
 @keyframes fade-in-up {
   from {
@@ -174,4 +182,34 @@ html {
 /* Dark mode scrollbar */
 .dark ::-webkit-scrollbar-track {
   background: #2d3748;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Fix text visibility in dark mode */
+.dark {
+  color-scheme: dark;
+}
+
+/* Ensure proper contrast in all modes */
+.bg-white {
+  background-color: rgb(255 255 255) !important;
+}
+
+.dark .bg-white {
+  background-color: rgb(17 24 39) !important;
+}
+
+.bg-gray-50 {
+  background-color: rgb(249 250 251) !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: rgb(31 41 55) !important;
 }
